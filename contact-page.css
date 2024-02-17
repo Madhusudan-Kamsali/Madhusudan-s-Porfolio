@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d1a39;
+}
+
+.Contact h2 {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Contact form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid blueviolet;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: whitesmoke;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: red;
+}
+
+.field .item::placeholder {
+    color: #a0a0a0;
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top:  -10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: transparent;
+    border: 2px solid blueviolet;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: none;
+    font-size: 16px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    padding: 12px 32px;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0 0 15px blueviolet;
+    font-size: 16px;
+    color: blueviolet;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
